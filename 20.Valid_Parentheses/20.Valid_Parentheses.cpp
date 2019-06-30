@@ -8,7 +8,9 @@ public:
             {']', '['}
         };
         
-        char stack[10000] = {};
+        if(s == "") return true;
+        
+        char stack[s.length()] = {};
         int stack_count =0;
         
         for(int i = 0; i < s.length(); i++) {  
